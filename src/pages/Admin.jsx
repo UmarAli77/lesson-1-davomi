@@ -20,7 +20,7 @@ function Admin() {
       if(!token) {
         navigate('/login')
       }
-  }, [])
+  }, [navigate])
   const handleReset = () => {
     setTitle('');
     setSubTitle('');

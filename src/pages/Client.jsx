@@ -14,7 +14,7 @@ function Client() {
     if(!token) {
       navigate('/login')
     }
-  }, [])
+  }, [navigate])
   const cartDelete = async (cardId) => {
     try {
       const token = localStorage.getItem('token')
